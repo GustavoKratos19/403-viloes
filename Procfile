@@ -1,1 +1,1 @@
-web: gunicorn <403-viloes>.wsgi
+web: gunicorn viloes.wsgi
