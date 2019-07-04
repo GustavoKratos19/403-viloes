@@ -1,19 +1,7 @@
+{% extends 'layout.html' %}
 {% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>Coisa Ruim</title>
-</head>
-<body>
-    <nav>
-        <a href="">Manas</a>
-        <a href="">Manos</a>
-        <a href="">Monstros</a>
-    </nav>    
+
+{% block content %}
     <section>
         {% for vilao in viloes %}
             <div class="card">
@@ -27,5 +15,4 @@
             </div>
         {% endfor %}
     </section>
-</body>
-</html>
+{% endblock  %}   
